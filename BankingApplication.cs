@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 
+//Classes for the user
 class User
 {
     public string Username { get; set; }
@@ -176,6 +177,7 @@ class BankingApplication
 
 class Program
 {
+    //menu driven ptions
     static void Main(string[] args)
     {
         BankingApplication app = new BankingApplication();
@@ -195,7 +197,7 @@ class Program
             Console.WriteLine("10. Exit");
             Console.Write("Select an option: ");
             int choice = -1;
-            try
+            try //exception handelling when irrelevant string input is given here
             {
                 choice = Convert.ToInt32(Console.ReadLine());
             }
@@ -222,7 +224,7 @@ class Program
                     app.Login(username, password);
                     break;
                 case 3:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account holder name: ");
                         string holderName = Console.ReadLine();
@@ -234,7 +236,7 @@ class Program
                     }
                     break;
                 case 4:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account number: ");
                         string acctNumber = Console.ReadLine();
@@ -248,7 +250,7 @@ class Program
                     }
                     break;
                 case 5:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account number: ");
                         string acctNumber = Console.ReadLine();
@@ -262,7 +264,7 @@ class Program
                     }
                     break;
                 case 6:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account number: ");
                         string acctNumber = Console.ReadLine();
@@ -274,7 +276,7 @@ class Program
                     }
                     break;
                 case 7:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account number: ");
                         string acctNumber = Console.ReadLine();
@@ -286,7 +288,7 @@ class Program
                     }
                     break;
                 case 8:
-                    if (app.IsUserLoggedIn())
+                    if (app.IsUserLoggedIn()) //checking if user is logged in
                     {
                         Console.Write("Enter account number: ");
                         string acctNumber = Console.ReadLine();
